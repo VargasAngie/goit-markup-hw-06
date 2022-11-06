@@ -84,37 +84,58 @@
                 X
               </button>
               <form class="sign-form" name="sign-up">
-                <p class="form__title">Deje sus datos, nos contactaremos con usted</p>
+                <p class="form__title">
+                  Deje sus datos, nos contactaremos con usted
+                </p>
                 <label class="form__label">
                   Nombre
-                  <input class="form__input" type="text" name="Nombre" />
+                  <div class="input-container">
+                    <svg class="form__icon user">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                    <input class="form__input" type="text" name="Nombre" />
+                  </div>
                 </label>
                 <label class="form__label">
                   Teléfono
-                  <input class="form__input" type="tel" name="Teléfono" />
+                  <div class="input-container">
+                    <svg class="form__icon telephone">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                    <input class="form__input" type="tel" name="Teléfono" />
+                  </div>
                 </label>
                 <label class="form__label">
                   E-mail
-                  <input class="form__input" type="email" name="E-mail" />
+                  <div class="input-container">
+                    <svg class="form__icon envelope">
+                      <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    <input class="form__input" type="email" name="E-mail" />
+                  </div>
                 </label>
                 <label class="form__label">
                   Comentarios
-                  <textarea class="form__comment"
+                  <textarea
+                    class="form__comment"
                     name="Comentarios"
-                    rows="8"
+                    rows="4"
                     placeholder="Introduzca el texto"
                   >
                   </textarea>
                 </label>
-                <label>
+                <label class="form__checkbox">
                   <input
                     type="checkbox"
                     name="check"
                     value="Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones"
-                    />
-                    Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+                  />
+                  <p class="checkbox__text">
+                    Estoy de acuerdo con el boletín informativo y acepto los
+                    Términos y Condiciones
+                  </p>
                 </label>
-                <button class="form__send" type="button">Enviar</button>
+                <button class="form__send" type="submit">Enviar</button>
               </form>
             </div>
           </div>
@@ -472,6 +493,7 @@
               <li><a href="tel:+525555296000">+52 55 5529 6000 </a></li>
             </ul>
           </address>
+
           <div class="social-media">
             <p class="text">encuentrenos en</p>
             <ul class="social-link-list footer-link-list">
@@ -504,6 +526,26 @@
                 </div>
               </li>
             </ul>
+          </div>
+
+          <div class="subscribe-container">
+            <form name="subscribe">
+              <p class="subscribe-text">SUSCRÍBASE al boletín informativo</p>
+              <label class="footer__label">
+                <input
+                  class="footer__input"
+                  type="email"
+                  name="email"
+                  placeholder="Correo electrónico"
+                />
+                <button class="footer__btn" type="submit">
+                  Suscríbase
+                  <svg class="send">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </label>
+            </form>
           </div>
         </div>
       </div>
