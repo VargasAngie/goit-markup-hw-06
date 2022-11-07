@@ -282,6 +282,7 @@ header {
 .form__input {
   height: inherit;
   width: inherit;
+  padding-left: 42px;
 }
 
 .input-container {
@@ -319,10 +320,6 @@ header {
 .form__comment:focus-within {
   border: 1px solid var(--high-lighted);
   cursor: pointer;
-}
-
-.form__input:focus-within {
-  padding-left: 42px;
 }
 
 .form__comment,
@@ -653,6 +650,7 @@ footer {
   border-radius: 4px;
   padding: 15px;
   margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__btn {
